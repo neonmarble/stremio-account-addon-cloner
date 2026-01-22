@@ -48,7 +48,7 @@ const getAuth = async (acc: Account) => {
 const getAddons = async (authKey: string) => {
     const collection = await pullAddonCollection(authKey);
 
-    return collection.result.addons;;
+    return collection.result.addons;
 }
 
 export { pushAddonCollection, getAuth, getAddons };
